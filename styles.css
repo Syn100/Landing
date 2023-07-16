@@ -1,0 +1,87 @@
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: #ffffff00; /* Adjust this to change overlay for darkness */
+    background-image: url("images/whitecircle.gif");
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    height: 100vh;
+    padding: 1rem;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/* UTILITY STYLES */
+.flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* SITE STYLES */
+#greeting {
+    font-size: 3.75rem;
+    margin-top: 2rem;
+}
+
+#time {
+    animation: fade-in 1.5s;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.typewriter h1 {
+    animation: typewriter 2s steps(30, end), blink 0.5s step-end infinite;
+    border-right: 0.08em solid #fff;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 0.08em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* ANIMATION KEYFRAMES */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
