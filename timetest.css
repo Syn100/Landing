@@ -1,0 +1,124 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: #1b0e00a8;
+    background-image: url("images/0k6meqvps4h91.gif");
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    font-family: "Poiret One", sans-serif;
+    height: 100vh;
+    padding: 1rem;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/* UTILITY STYLES */
+.flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* SITE STYLES */
+.time-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.time-container * {
+    text-align: center;
+}
+
+#day,
+#date {
+    font-family: "Turret Road", sans-serif;
+    font-size: 2rem;
+}
+
+#time {
+    font-size: 3.25rem;
+}
+
+#greeting {
+    font-family: "Megrim", sans-serif;
+    font-size: 2.5rem;
+    margin: 1rem 1rem 1.25rem;
+}
+
+#links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+}
+
+#links > * {
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 0.75rem;
+    width: fit-content;
+}
+
+/* ===TABLET+ VERSION=== */
+@media only screen and (min-width: 768px) {
+    /* SITE STYLES */
+    #day,
+    #date {
+        font-size: 2rem;
+    }
+
+    #time {
+        font-size: 5.95rem;
+    }
+
+    #greeting {
+        font-size: 2.5rem;
+        margin: 1.5rem 1rem 2rem;
+    }
+
+    #links {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #links > * {
+        border-radius: 40px;
+        font-size: 1.25rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #link-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    a {
+        width: fit-content;
+    }
+}
