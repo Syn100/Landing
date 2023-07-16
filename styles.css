@@ -42,9 +42,7 @@ a:active {
 }
 
 #time {
-    animation: fade-in 1.5s;
     font-size: 3rem;
-    margin-bottom: 2rem;
 }
 
 .typewriter h1 {
@@ -55,6 +53,12 @@ a:active {
     letter-spacing: 0.08em;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.time-container {
+    justify-content: center;
+    animation: fade-in 1.5s;
+    margin-bottom: 2rem;
 }
 
 /* ANIMATION KEYFRAMES */
