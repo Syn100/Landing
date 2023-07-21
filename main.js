@@ -78,6 +78,9 @@ setInterval(() => {
     var meridiem = "AM";
 
     const html_time = document.querySelector("#time");
+    if (hours == 12) {
+        meridiem = "PM"
+    };
     if (hours > 12) {
         hours = hours - 12;
         meridiem = "PM";
